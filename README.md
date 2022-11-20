@@ -4,6 +4,8 @@ Los driver a utilizar aplican para una distribución Debian 11 (bullseye) en una
 
 ## Lista de paquetes
 
+Estos paquetes e proporcionan porque, lógicamente, tras la instalación de la distro, no existirá red.
+
 * broadcom-sta-dkms_6.30.223.271-17_all.deb
 * dctrl-tools_2.24-3+b1_amd64.deb
 * distro-info-data_0.51+deb11u2_all.deb
