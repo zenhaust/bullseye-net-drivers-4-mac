@@ -14,6 +14,9 @@ Estos paquetes e proporcionan porque, lógicamente, tras la instalación de la d
 
 ## Intalación de paquetes
 
+
+Como **root** ejecutar
+
 ```bash
 dpkg -i dctrl-tools_2.24-3+b1_amd64.deb 
 dpkg -i distro-info-data_0.51+deb11u2_all.deb
@@ -24,4 +27,13 @@ dpkg -i broadcom-sta-dkms_6.30.223.271-17_all.deb
 
 Los paquetes listados funcionan sin problema. Se recomienda, no obstante, revisar si existen versiones actualizadas.
 
+## Errores
 
+Si no se encuentran en el path los directorios `sbin` fallará `ldconfig`
+
+Añadir al path
+
+```bash
+export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin
+echo 'export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin' >> /root/.bashrc
+```
